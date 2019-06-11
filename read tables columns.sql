@@ -16,7 +16,7 @@ select distinct
 	column_name = C.COLUMN_NAME,
 	data_type = C.DATA_TYPE,
 	max_length = C.CHARACTER_MAXIMUM_LENGTH,
-		is_primary = case
+	is_primary = case
 		when KU.CONSTRAINT_NAME is not null then 1
 		else 0
 		end,
