@@ -14,8 +14,8 @@ insert @tables (name) values ('Log')
 select
 	Table_Name = so.Name,
 	Column_Name = sc.Name,
-	sc.ColOrder,
-	sc.status,
+	--sc.ColOrder,
+	--sc.status,
 	Is_Primary = case 
 		when  (sc.status = 0x80) OR (sc.ColOrder = 1 and not sc.status = 0x80 ) then 1
 		else 0
