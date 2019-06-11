@@ -1,6 +1,8 @@
 use Logging
 go
 
+--add tables you want to read their columns in the parameter table @tables
+
 declare @tables table
 (
 	name varchar(100)
