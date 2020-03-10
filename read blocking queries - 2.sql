@@ -1,5 +1,5 @@
 declare @db_name varchar(100)
-set @db_name = 'GAFIFZ_Portal' 
+set @db_name = 'db_name' 
 
 select 
 	db_name(L.resource_database_id) as DatabaseName, 
