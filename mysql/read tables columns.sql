@@ -4,6 +4,7 @@ set @db_name = 'membership';
 select
 	table_name,
     column_name,
+    ordinal_position,
     is_nullable,
     data_type,
     character_maximum_length,
